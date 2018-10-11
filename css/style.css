@@ -1,0 +1,199 @@
+body{
+    display: grid;
+    background-color: #a50000;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 99px 1fr 313px;
+    grid-column-gap: 16px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hf hf hf hf hf hf hf hf hf hf hf hf"
+    "hg hg hg hg hg hg hg hg hg hg hg hg"
+    ;
+}
+
+ div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+  }
+
+    header{
+        background-color: #3268bd;
+        grid-column: span 12;
+        display: grid;
+        //grid-column-gap: 16px;
+        height: 40px;  
+        -webkit-box-shadow: 0px 14px 32px 1px rgba(0,0,0,0.68); 
+        box-shadow: 0px 14px 32px 1px rgba(0,0,0,0.68);
+    }
+
+   
+    }
+
+       ul{
+           display:flex;
+       }
+
+       li{
+           list-style-type: none;
+           border-right: 1px solid white;
+           padding: 0 10px;
+       }
+
+       li:-child{
+           border-right: none;
+       }
+       li:last-child{
+           border-right: none;
+       }
+
+
+       a{
+           color: white;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 25px;
+           text-decoration: none;
+       }
+
+        #box_1{
+        background-color: white;
+        grid-column: 7/9; 
+        grid-row: 3/3;   
+            
+        }
+    
+        #box_2{
+        background-color: rgba(255, 255, 255, 0);
+        grid-column: 6/10;
+        grid-row: 6/6;  
+        
+        
+        
+        }
+
+        #box_3{
+            background-color: rgba(255, 255, 255, 0);
+            grid-column: 12/13;
+            grid-row: 1/2;  
+             }
+
+        #box_4{
+            background-image: url("../img/logo.png");
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 90px;
+            position: left;
+            background-color: #a50000;
+            grid-column: 1/13;
+            grid-row: 7/7; 
+            color: white; 
+            justify-content: center;
+            -webkit-box-shadow: 0px 14px 32px 1px rgba(0,0,0,0.68); 
+            box-shadow: 0px 14px 32px 1px rgba(0,0,0,0.68);
+        }         
+        
+    
+    
+        main {
+        grid-column: 1/13; 
+        background-color: white; 
+        display: grid;  
+        }
+
+    footer{
+        background-color: #a50000;   
+        display: grid;
+        grid-area: hg;   
+        }       
+
+
+
+    
+    
+    h2{
+        font-size: 50px;
+        justify-content: center;    
+        align-items: center;
+        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+    }
+
+     .button{
+         border-radius: 24px;
+        border-color: #3268BD;
+        background-color: #a50000b7;
+        color: white;
+        padding-top: 70px;
+        padding-bottom: 70px; 
+        margin: 16px;
+        font-size: 25px;
+        color: rgba(0,0,0,.6);
+background:  #3267bd88  ;
+text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+     
+    }
+  
+    a {
+         text-align: center;
+    }
+    
+
+    .button:hover{
+        background-color: #a3000088;
+        cursor: pointer;
+    }
+   
+    .product_img img{
+        width: 50%;
+        
+    }
+
+    #product .product_img img{
+        justify-content: left;
+        
+    }
+
+   
+
+
+   #product{
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)) ;
+    grid-template-rows:  repeat(3, minmax(400, auto));
+    grid-area: hf;
+    grid-gap: 16px;
+    display: grid;
+    background-color: #3267bd88; 
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 6px inset #3268BD;
+    border-radius: 24px;
+    -webkit-box-shadow: 0px 14px 32px 1px rgba(0,0,0,0.68); 
+    box-shadow: 0px 14px 32px 1px rgba(0,0,0,0.68);
+    
+    
+   }
+
+
+
+.mainimage {
+        background: linear-gradient(
+        to bottom,
+         rgba(165, 0, 0, 0),
+         rgb(165, 0, 0,0.5)
+        ),url(../img/avengers.png);
+        height: 700px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: initial;
+        display: grid;
+        grid-area: hf;
+        grid-template-columns: repeat(12, 1fr) ;
+        grid-template-rows: repeat(6, 1fr) ;
+        grid-column: span 12;
+        grid-row: 2/5;
+        -webkit-box-shadow: 0px 5px 27px 0px rgba(0,0,0,0.75); 
+box-shadow: 0px 5px 27px 0px rgba(0,0,0,0.75);
+    
+
+
