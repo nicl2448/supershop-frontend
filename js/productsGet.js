@@ -29,7 +29,7 @@ function addSuitProduct(suit) {
 
 function buildProduct(suit) {
     var ret =
-"<div id=" + "product"+ suit.id +">" +
+"<div class=" + "product"+ ">" +
         "<div class='product_img'>" +
         "<img src=" + suit.imageUrl + " alt=''>" +
         "</div>" +
