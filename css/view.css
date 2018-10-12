@@ -140,13 +140,13 @@ form li:after
 	display:block;
 	height:0;
 	visibility:hidden;
-}
 
 .buttons
 {
 	clear:both;
 	display:block;
 	margin-top:10px;
+	cursor: pointer;
 }
 
 * html form li
